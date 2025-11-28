@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Threat Detector 🛡</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>🛡 Cyber Security Threat Detector</h2>
+
+    <form method="POST">
+        <input type="password" name="password" placeholder="Enter Password">
+        <button class="btn green">🔐 Check Password</button>
+    </form>
+
+    <form method="POST">
+        <input type="text" name="url" placeholder="Enter Website URL">
+        <button class="btn yellow">🔗 Detect Phishing</button>
+    </form>
+
+    <form method="POST">
+        <input type="text" name="filename" placeholder="Enter File Name">
+        <button class="btn red">🦠 Detect Malware</button>
+    </form>
+
+    <h3 class="result">{{ result }}</h3>
+</div>
+
+</body>
+</html>
